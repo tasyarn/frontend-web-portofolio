@@ -9,7 +9,7 @@ const mansalva = Mansalva({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-[#E4E0E1] min-h-screen flex flex-col mb-10">
+    <div className="bg-[#E4E0E1] min-h-screen flex flex-col">
       <Navbar />
       <main className="flex flex-col items-center justify-center flex-1 text-center">
         <motion.div
@@ -23,9 +23,9 @@ export default function Home() {
             height={200}
             width={200}
             alt="Profile Image"
-            className="hover:scale-105 transition-transform duration-300"
+            className="hover:scale-105 transition-transform duration-300 mb-4"
           />
-          <h1 className={`${mansalva.className} text-4xl text-gray-900`}>
+          <h1 className={`${mansalva.className} text-3xl text-[#493628]`}>
             <Typewriter
               options={{
                 strings: ["Welcome to My Portfolio Website", "I'm Tasya Rania Arinastia", "Contact Me, ASAP!"],
@@ -35,8 +35,10 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="text-gray-600 mt-4">
-            Explore my projects and experiences.
+          <p className="text-[#493628] mt-4">
+            A passionate Fullstack Web Developer dedicated to building efficient and scalable digital solutions. <br />
+            With expertise in both frontend and backend development, I create fast, responsive, and functional web applications. <br />
+            Let’s collaborate to craft exceptional web experiences! Check out <span className="font-bold">My Resume</span> and <span className="font-bold">Portfolio</span>.
           </p>
         </motion.div>
       </main>
